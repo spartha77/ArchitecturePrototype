@@ -1,0 +1,2 @@
+#define EVENTSOBSERVERSNOTIFIERS_API __declspec(dllexport)
+#define EVENTSOBSERVERSNOTIFIERS_API __declspec(dllimport)

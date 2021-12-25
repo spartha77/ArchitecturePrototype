@@ -1,0 +1,2 @@
+#define FACEIDENTIFICATIONLIB_API __declspec(dllexport)
+#define FACEIDENTIFICATIONLIB_API __declspec(dllimport)

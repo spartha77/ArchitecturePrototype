@@ -1,0 +1,2 @@
+#define COMMANDMANAGERLIB_API __declspec(dllexport)
+#define COMMANDMANAGERLIB_API __declspec(dllimport)

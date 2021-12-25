@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libfusion.so -o libfusion.so CMakeFiles/fusion.dir/FusionLib/fusion.cc.o CMakeFiles/fusion.dir/fusion_autogen/mocs_compilation.cpp.o -Wl,-rpath,/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build libproto_lib.so -lprotobuf 

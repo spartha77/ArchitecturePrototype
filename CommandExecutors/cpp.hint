@@ -1,0 +1,2 @@
+#define COMMANDEXECUTORS_API __declspec(dllexport)
+#define COMMANDEXECUTORS_API __declspec(dllimport)

@@ -1,0 +1,114 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e693c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e693c.dir/build.make CMakeFiles/cmTC_e693c.dir/build
+make[1]: Entering directory '/home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e693c.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=c++11   -o CMakeFiles/cmTC_e693c.dir/CheckSymbolExists.c.o   -c /home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_e693c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e693c.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c++11    -rdynamic CMakeFiles/cmTC_e693c.dir/CheckSymbolExists.c.o  -o cmTC_e693c 
+CMakeFiles/cmTC_e693c.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e693c.dir/build.make:97: recipe for target 'cmTC_e693c' failed
+make[1]: *** [cmTC_e693c] Error 1
+make[1]: Leaving directory '/home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e693c/fast' failed
+make: *** [cmTC_e693c/fast] Error 2
+
+File /home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a7db4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7db4.dir/build.make CMakeFiles/cmTC_a7db4.dir/build
+make[1]: Entering directory '/home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7db4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_a7db4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_a7db4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7db4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    -rdynamic CMakeFiles/cmTC_a7db4.dir/CheckFunctionExists.c.o  -o cmTC_a7db4 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a7db4.dir/build.make:97: recipe for target 'cmTC_a7db4' failed
+make[1]: *** [cmTC_a7db4] Error 1
+make[1]: Leaving directory '/home/fusion/Desktop/FromWindows/FaceBodyDetectionOpenVINO_26FEB_QTIntegrated/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a7db4/fast' failed
+make: *** [cmTC_a7db4/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_25b63/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25b63.dir/build.make CMakeFiles/cmTC_25b63.dir/build
+make[1]: Entering directory '/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25b63.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=c++11   -o CMakeFiles/cmTC_25b63.dir/CheckSymbolExists.c.o   -c /home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_25b63
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25b63.dir/link.txt --verbose=1
+/usr/bin/cc  -std=c++11    -rdynamic CMakeFiles/cmTC_25b63.dir/CheckSymbolExists.c.o  -o cmTC_25b63 
+CMakeFiles/cmTC_25b63.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_25b63.dir/build.make:97: recipe for target 'cmTC_25b63' failed
+make[1]: *** [cmTC_25b63] Error 1
+make[1]: Leaving directory '/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_25b63/fast' failed
+make: *** [cmTC_25b63/fast] Error 2
+
+File /home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_06fd1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_06fd1.dir/build.make CMakeFiles/cmTC_06fd1.dir/build
+make[1]: Entering directory '/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_06fd1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11   -o CMakeFiles/cmTC_06fd1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+cc1: warning: command line option ‘-std=c++11’ is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_06fd1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06fd1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -std=c++11    -rdynamic CMakeFiles/cmTC_06fd1.dir/CheckFunctionExists.c.o  -o cmTC_06fd1 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_06fd1.dir/build.make:97: recipe for target 'cmTC_06fd1' failed
+make[1]: *** [cmTC_06fd1] Error 1
+make[1]: Leaving directory '/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_06fd1/fast' failed
+make: *** [cmTC_06fd1/fast] Error 2
+
+

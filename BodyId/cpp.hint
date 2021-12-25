@@ -1,0 +1,2 @@
+#define BODYID_API __declspec(dllexport)
+#define BODYID_API __declspec(dllimport)

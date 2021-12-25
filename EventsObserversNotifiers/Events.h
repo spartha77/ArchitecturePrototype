@@ -1,0 +1,21 @@
+#pragma once
+#ifndef _EVENTS_H_
+#define _EVENTS_H_
+#include "EventsObserversNotifiers.h"
+namespace AdaptiveHumanTracker {
+	enum class EVENTSOBSERVERSNOTIFIERS_API Event
+	{
+		FACE_REGISTRATION,
+		FACE_DETECTION,
+		FACE_IDENTIFICATION,
+		HUMAN_DETECTION,
+		BODY_IDENTIFICATION,
+		ADAPTIVE_PERSON_IDENTIFICATION,
+		WORK_STARTED,
+		WORK_RUNNING,
+		WORK_ABORTED,
+		WORK_SUCCEEDED,
+		WORK_FAILED
+	};
+}
+#endif

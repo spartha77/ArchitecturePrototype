@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{574D1EC4-7867-4194-BE6A-659C18D35508}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ManagedCommandsWrapper</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)CommandExecutors\;$(SolutionDir)CommandManagerLib\;$(SolutionDir)ConcreteCommandsLib\;$(SolutionDir)CommandsBase\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\include\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\src\extension\;$(INTEL_CVSDK_DIR)openvx\include\;$(INTEL_CVSDK_DIR)opencv\include\;$(SolutionDir)EventsObserversNotifiers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>COMMANDEXECUTORS.lib;COMMANDMANAGERLIB.lib;CONCRETECOMMANDSLIB.lib;EVENTSOBSERVERSNOTIFIERS.lib;format_reader.lib;common.lib;cpu_extension.lib;inference_engine.lib;tbb.lib;opencv_world410.lib;opencv_pvl410.lib;iap_openvx.lib;openvx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(PlatformName)\$(Configuration)\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\bin\intel64\$(Configuration)\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\lib\intel64\$(Configuration)\;$(SolutionDir)3rdPartyLibs\OpenVINOSamples\inference_engine_samples_build\intel$(PlatformArchitecture)\$(Configuration)\;$(INTEL_CVSDK_DIR)opencv\bin\;$(INTEL_CVSDK_DIR)\openvx\bin\;$(INTEL_CVSDK_DIR)\opencv\lib\;$(INTEL_CVSDK_DIR)\openvx\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)CommandExecutors\;$(SolutionDir)CommandManagerLib\;$(SolutionDir)ConcreteCommandsLib\;$(SolutionDir)CommandsBase\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\include\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\src\extension\;$(INTEL_CVSDK_DIR)openvx\include\;$(INTEL_CVSDK_DIR)opencv\include\;$(SolutionDir)EventsObserversNotifiers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>COMMANDEXECUTORS.lib;COMMANDMANAGERLIB.lib;CONCRETECOMMANDSLIB.lib;EVENTSOBSERVERSNOTIFIERS.lib;format_reader.lib;common.lib;cpu_extension.lib;inference_engined.lib;tbb_debug.lib;tbbmalloc_debug.lib;opencv_world410d.lib;opencv_pvl410d.lib;iap_openvx.lib;openvx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(PlatformName)\$(Configuration)\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\bin\intel64\$(Configuration)\;$(INTEL_CVSDK_DIR)deployment_tools\inference_engine\lib\intel64\$(Configuration)\;$(SolutionDir)3rdPartyLibs\OpenVINOSamples\inference_engine_samples_build\intel$(PlatformArchitecture)\$(Configuration)\;$(INTEL_CVSDK_DIR)opencv\bin\;$(INTEL_CVSDK_DIR)\openvx\bin\;$(INTEL_CVSDK_DIR)\opencv\lib\;$(INTEL_CVSDK_DIR)\openvx\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="ManagedCommandsWrapperUtils.h" />
+    <ClInclude Include="MngdAbstractSkill.h" />
+    <ClInclude Include="MngdBodyIdCommand.h" />
+    <ClInclude Include="MngdBodyIdCommandExecutorInputData.h" />
+    <ClInclude Include="MngdFaceDetectionCommand.h" />
+    <ClInclude Include="MngdFaceDetectionCommandExecutorInputData.h" />
+    <ClInclude Include="MngdFaceIdentificationCommand.h" />
+    <ClInclude Include="MngdFaceIdentificationCommandExecutorInputData.h" />
+    <ClInclude Include="MngdHumanDetectionCommand.h" />
+    <ClInclude Include="MngdHumanDetectionCommandExecutorInputData.h" />
+    <ClInclude Include="MngdIdentifyPersonCommand.h" />
+    <ClInclude Include="MngdIdentifyPersonCommandExecutorInputData.h" />
+    <ClInclude Include="MngdRegisterPersonCommandExecutorInputData.h" />
+    <ClInclude Include="MngdRegisterPersonCommand.h" />
+    <ClInclude Include="MngdOpenCVWrapper.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="ManagedCommandsWrapperUtils.cpp" />
+    <ClCompile Include="MngdBodyIdCommand.cpp" />
+    <ClCompile Include="MngdFaceDetectionCommand.cpp" />
+    <ClCompile Include="MngdFaceIdentificationCommand.cpp" />
+    <ClCompile Include="MngdHumanDetectionCommand.cpp" />
+    <ClCompile Include="MngdIdentifyPersonCommand.cpp" />
+    <ClCompile Include="MngdRegisterPersonCommand.cpp" />
+    <ClCompile Include="MngdOpenCVWrapper.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommandExecutors\CommandExecutors.vcxproj">
+      <Project>{da0ab396-75a6-4759-b734-50014dc1bffe}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

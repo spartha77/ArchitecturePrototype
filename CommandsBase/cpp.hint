@@ -1,0 +1,2 @@
+#define COMMANDSBASE_API __declspec(dllexport)
+#define COMMANDSBASE_API __declspec(dllimport)

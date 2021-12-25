@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/CommandsBase.cpp
+pch.h
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/pch.h
+framework.h
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/framework.h
+CommandsBase.h
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/CommandsBase.h
+
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/CommandsBase.h
+
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/framework.h
+Windows.h
+-
+unistd.h
+-
+
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/pch.h
+framework.h
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/CommandsBase/framework.h
+
+/home/fusion/Desktop/Share/partha/src_version010_QTIntegratedBugFixes_AbortEnabled/source_06_March_2020/build/COMMANDSBASE_autogen/mocs_compilation.cpp
+

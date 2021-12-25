@@ -1,0 +1,2 @@
+#define CONCRETECOMMANDSLIB_API __declspec(dllexport)
+#define CONCRETECOMMANDSLIB_API __declspec(dllimport)

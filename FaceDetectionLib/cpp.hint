@@ -1,0 +1,2 @@
+#define FACEDETECTIONLIB_API __declspec(dllexport)
+#define FACEDETECTIONLIB_API __declspec(dllimport)

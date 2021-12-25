@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libutils_lib.so -o libutils_lib.so CMakeFiles/utils_lib.dir/UtilsLib/image_serde.cc.o CMakeFiles/utils_lib.dir/UtilsLib/image_draw.cc.o CMakeFiles/utils_lib.dir/UtilsLib/fs.cc.o CMakeFiles/utils_lib.dir/utils_lib_autogen/mocs_compilation.cpp.o 
