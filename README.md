@@ -10,7 +10,7 @@ This framework was subsequently used for a continuous face recognition program h
 		
   a.	Presentation Layer (Platform): Platform dependent UI, QT and WinForms in Windows and QT on Ubuntu Linux.
   
-    •	Camera live feed that is available for the platform.
+    Camera live feed that is available for the platform.
     
   b.	Application layer: Intermediate adapter component, C++/CLI for Windows and an adapter component for QT, to make the integration of the core (see below) loosely coupled     with the platform. These adapter components can be called by the presentation layer as APIs as per 
   
