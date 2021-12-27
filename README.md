@@ -1,7 +1,7 @@
 # ArchitecturePrototype
-ArchitecturePrototype
 
-The repository has the basic architecture implemented in cross-platform C++ (11-14) to use this as a framework to productize algorithms into a consummate usable software solution.
+
+The repository has the basic architecture implemented in cross-platform C++ (11-14) to use this as a framework to productize algorithms into a consummate usable software solution. This will not successfulyl build since it depends on other dependencies which are not added on purpose.
 
 The design is a collection of several architectural features and software design patterns, the best of various software solutions that are available in the major CAD, CAM and Robotic and Avionic simulation software solutions. Keeping up-to the wise saying that “That which is designed is not to be seen and that which is seen is not to be designed” an honest try is made to implement some of the essential design artifacts.
 This framework was subsequently used for a continuous face recognition program having the following components.
